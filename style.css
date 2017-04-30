@@ -1,0 +1,17 @@
+body {
+  background-image: url("images/bross.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+div {
+  text-align: center;
+  border: 3px solid black;
+  background: peachpuff;
+}
