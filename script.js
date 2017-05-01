@@ -35,5 +35,12 @@ $(document).ready(function() {
 
     $("div").height(maxHeight);
 
+        $('div').on('mouseover',function(){
+        $(this).css('opacity', '0.7');
+    });
+    $('div').on('mouseleave',function(){
+        $(this).css('opacity','1');
+    });
+
   });
 });
