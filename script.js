@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
 
-    $.get('https://www.reddit.com/r/bobross'+'.json').done(function(response) {
+    $.get('https://www.reddit.com/r/tsunderesharks'+'.json').done(function(response) {
 
       console.log(response.data.children[0].data);
 
@@ -16,10 +16,9 @@ $(document).ready(function() {
 
 
       $("body").append("<div><p>" + title + "</p><p><img src=" + thumbnail + "></p><p>" + author + "</p><p>" + score + "</p>")
-      .css("align", "center");
 
     };
-$(function() {
+
     $(".p").css({
       "position": "absolute",
       "left": "50%",
@@ -27,7 +26,14 @@ $(function() {
       "margin-left": -$(".p").outerWidth()/2,
       "margin-top": -$(".p").outerWidth()/2
     })
-});
+
+    var maxHeight = 0;
+
+    $("div").each(function(){
+       if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+    });
+
+    $("div").height(maxHeight);
 
   });
 });

@@ -1,8 +1,16 @@
 body {
-  background-image: url("images/bross.jpg");
+  background-image: url("images/wata.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+h1 {
+  font-family: 'Syncopate', sans-serif;
+}
+
+p {
+  font-family: 'Syncopate', sans-serif;
 }
 
 img {
@@ -13,5 +21,10 @@ img {
 div {
   text-align: center;
   border: 3px solid black;
-  background: peachpuff;
+  background: rgba(60, 158, 165, 0.5);
+  width:12vw;
+  height:inherit;
+  margin:3%;
+  display:inline-block;
+  float:left;
 }
